@@ -6,11 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            Calculator calculator = new CalculatorImpl();
-            CalculatorFrame frame = new CalculatorFrame();
-            CalculatorPresenter presenter = new CalculatorPresenterImpl(calculator, frame);
-
-            frame.setPresenter(presenter);
+            CalculatorFrame frame = CalculatorApp.wire(new CalculatorFrame());
             frame.setVisible(true);
         });
     }
