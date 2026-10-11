@@ -1,0 +1,31 @@
+# --- Maven ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Исключение для wrapper, если решите его добавить
+# !.mvn/wrapper/maven-wrapper.jar
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# --- Java ---
+# Файлы компиляции
+*.class
+
+# Файлы логов
+*.log
+
+# Файлы виртуальной машины Java (Crash logs)
+hs_err_pid*
+
+
